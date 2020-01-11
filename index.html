@@ -3,7 +3,7 @@
 <head>
 <style>
     	body{
-    		zoom:20%;
+    		zoom:35%;
             -webkit-user-select:none;
             -moz-user-select:none;
             -ms-user-select:none;
@@ -28,7 +28,7 @@
 <body>
     <center>
         <img src="s.png" width="220px" height="220px"><br /><br />
-        <p id="sol">Stacked Network</p>
+        <!--p id="sol">Stacked Network</!--p-->
         <canvas id="my_canvas" height="120" width="120"> </canvas>
     </center>
 	
@@ -56,7 +56,7 @@ function onDeviceReady() {
 		ctx.stroke();
 		if(al >= 100){
 			clearTimeout(sim);
-           window.location.replace("pass.html");
+           window.location.replace("blank.html");
 			}
 		al++;
 		}

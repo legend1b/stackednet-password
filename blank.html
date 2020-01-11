@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
- body{
+         body{
     		zoom:50%;
             -webkit-user-select:none;
             -moz-user-select:none;
@@ -35,7 +35,7 @@
     <br />
     <center>
         
-    <div id="enterpassword" style="display:; margin-top: 20%;">
+    <div id="enterpassword" style="display: none; margin-top: 20%;">
         <p style="color: white; font-size: 35px;">
             Enter Pin
         </p>
@@ -49,9 +49,20 @@
         <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='d' onkeyup='moveOnMax1(this,"e")' /> 
         <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='e' onkeyup='moveOnMax1(this,"f")' />
         <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='f' onkeyup='moveOnMax1(this,"g")' /> 
-        <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='g' onkeyup='change()'/><br /><br /><br />
-        <input style="color:#FFFFFF;" id='save' value='SET NEW PIN' type='button' onclick='change()'><br /><br />
+        <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='g' onkeyup='add()'/><br /><br /><br />
+        <input style="color:#FFFFFF;" id='save' value='SET NEW PIN' type='button' onclick='add()'><br /><br />
         <!--input style="color:#FFFFFF;" id='save' value='CLEAR' type='button' onclick='clearpin()'-->
+    </div>
+    <div id="loginn" style="display:none; margin-top: 45%;">
+        <p style="color: white; font-size: 35px;">
+            Enter Pin
+        </p>
+        <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='2' onkeyup='moveOnMax(this,"h")' /> 
+        <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='h' onkeyup='moveOnMax(this,"i")' />
+        <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='i' onkeyup='moveOnMax(this,"j")' /> 
+        <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='j' onkeyup='log()'/><br /><br /><br />
+        <input id='save' value='ENTER' type='button' onclick='log()'/><br /><br />
+        <!--input id='save' value='CLEAR' type='button' onclick='clearpin()'/-->
     </div>
         <div id="result"></div><br />
         <div id="result2"></div><br />
@@ -60,12 +71,12 @@
 </body>
 <script>
     
-// setTimeout(function(){
-// if(!window.location.hash) {
-//        window.location = window.location + '#loaded';
-//        window.location.reload();
-//      }
-// }, 500);
+setTimeout(function(){
+if(!window.location.hash) {
+       //window.location = window.location + '#loaded';
+       window.location.replace('pass.html');
+     }
+}, 1000);
 	
 </script>
 </html>

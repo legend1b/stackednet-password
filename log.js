@@ -76,15 +76,41 @@ function add() {
 				   setTimeout(function(){
 				$(".pchange").hide();
 			}, 4000);
+			var nameaa = document.getElementById('1').value = '';
+	var namea = document.getElementById('a').value= '';
+	var nameb = document.getElementById('b').value= '';
+	var namec = document.getElementById('c').value= '';
+	var named = document.getElementById('d').value= '';
+	var namee = document.getElementById('e').value= '';
+	var namef = document.getElementById('f').value= '';
+	var nameg = document.getElementById('g').value= '';
+	var name2 = document.getElementById('2').value= '';
+	var nameh = document.getElementById('h').value= '';
+	var namei = document.getElementById('i').value= '';
+	var namej = document.getElementById('j').value= '';
+	$("#1").focus();
 		}
 			
 		}
-		else{$(".alerts").text('Empty field(s).');
+		else{
+			$(".alerts").text('Empty field(s).');
         		$(".pchange").show();
 				   setTimeout(function(){
 				$(".pchange").hide();
 			}, 4000);
-			
+			var nameaa = document.getElementById('1').value = '';
+			var namea = document.getElementById('a').value= '';
+			var nameb = document.getElementById('b').value= '';
+			var namec = document.getElementById('c').value= '';
+			var named = document.getElementById('d').value= '';
+			var namee = document.getElementById('e').value= '';
+			var namef = document.getElementById('f').value= '';
+			var nameg = document.getElementById('g').value= '';
+			var name2 = document.getElementById('2').value= '';
+			var nameh = document.getElementById('h').value= '';
+			var namei = document.getElementById('i').value= '';
+			var namej = document.getElementById('j').value= '';
+			$("#1").focus();
 		}
 		
 	});
@@ -114,20 +140,48 @@ function change() {
 			window.location.replace("store.html");
 		}
 		else {
+
 			$(".alerts").text('Pins do not match.');
         		$(".pchange").show();
 				   setTimeout(function(){
 				$(".pchange").hide();
 			}, 4000);
+	var nameaa = document.getElementById('1').value = '';
+	var namea = document.getElementById('a').value= '';
+	var nameb = document.getElementById('b').value= '';
+	var namec = document.getElementById('c').value= '';
+	var named = document.getElementById('d').value= '';
+	var namee = document.getElementById('e').value= '';
+	var namef = document.getElementById('f').value= '';
+	var nameg = document.getElementById('g').value= '';
+	var name2 = document.getElementById('2').value= '';
+	var nameh = document.getElementById('h').value= '';
+	var namei = document.getElementById('i').value= '';
+	var namej = document.getElementById('j').value= '';		
+	$("#1").focus();	
 		}
 			
 		}
-		else{$(".alerts").text('Empty field(s).');
+		else{
+	
+			$(".alerts").text('Empty field(s).');
         		$(".pchange").show();
 				   setTimeout(function(){
 				$(".pchange").hide();
 			}, 4000);
-			
+	var nameaa = document.getElementById('1').value = '';
+	var namea = document.getElementById('a').value= '';
+	var nameb = document.getElementById('b').value= '';
+	var namec = document.getElementById('c').value= '';
+	var named = document.getElementById('d').value= '';
+	var namee = document.getElementById('e').value= '';
+	var namef = document.getElementById('f').value= '';
+	var nameg = document.getElementById('g').value= '';
+	var name2 = document.getElementById('2').value= '';
+	var nameh = document.getElementById('h').value= '';
+	var namei = document.getElementById('i').value= '';
+	var namej = document.getElementById('j').value= '';	
+	$("#1").focus();		
 		}
 	});
 }
@@ -136,16 +190,16 @@ function log() {
 	var nameh = document.getElementById('h').value;
 	var namei = document.getElementById('i').value;
 	var namej = document.getElementById('j').value;
-
+	var pin = name2 + nameh + namei + namej;
 	db.transaction(function (tx){
 		if( name2 != "" && nameh != "" && namei != "" && namej != ""){
-			var pin = name2 + nameh + namei + namej;
 			tx.executeSql('select * from papado', [],function(tx, results){
 				var n = results.rows.length;
 				for(var i = 0; i <  n; i++){
 					var work = results.rows.item(i);
 						s = work.name;
 						if(pin == s){
+					window.location = window.location;
                     window.location.replace("store.html");
 						}
 						else{
@@ -155,16 +209,43 @@ function log() {
 				$(".pchange").hide();
 			}, 4000); 
 				  $("#inp1").val('');
+				  var nameaa = document.getElementById('1').value = '';
+				  var namea = document.getElementById('a').value= '';
+				  var nameb = document.getElementById('b').value= '';
+				  var namec = document.getElementById('c').value= '';
+				  var named = document.getElementById('d').value= '';
+				  var namee = document.getElementById('e').value= '';
+				  var namef = document.getElementById('f').value= '';
+				  var nameg = document.getElementById('g').value= '';
+				  var name2 = document.getElementById('2').value= '';
+				  var nameh = document.getElementById('h').value= '';
+				  var namei = document.getElementById('i').value= '';
+				  var namej = document.getElementById('j').value= '';
+				  $("#2").focus();					  
 
 						}
 				}
 			});}
 			else{
-			$(".alerts").text('Empty Field');
+			$(".alerts").text('Empty Field(s)');
         		$(".pchange").show();
 				   setTimeout(function(){
 				$(".pchange").hide();
 			}, 4000);  
+			var nameaa = document.getElementById('1').value = '';
+			var namea = document.getElementById('a').value= '';
+			var nameb = document.getElementById('b').value= '';
+			var namec = document.getElementById('c').value= '';
+			var named = document.getElementById('d').value= '';
+			var namee = document.getElementById('e').value= '';
+			var namef = document.getElementById('f').value= '';
+			var nameg = document.getElementById('g').value= '';
+			var name2 = document.getElementById('2').value= '';
+			var nameh = document.getElementById('h').value= '';
+			var namei = document.getElementById('i').value= '';
+			var namej = document.getElementById('j').value= '';	
+			$("#2").focus();
+
 			}
 	});
 }

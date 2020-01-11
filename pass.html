@@ -35,7 +35,7 @@
     <br />
     <center>
         
-    <div id="enterpassword" style="display: none; margin-top: 35%;">
+    <div id="enterpassword" style="display: none; margin-top: 20%;">
         <p style="color: white; font-size: 35px;">
             Enter Pin
         </p>
@@ -51,7 +51,7 @@
         <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='f' onkeyup='moveOnMax1(this,"g")' /> 
         <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='g' onkeyup='add()'/><br /><br /><br />
         <input style="color:#FFFFFF;" id='save' value='SET NEW PIN' type='button' onclick='add()'><br /><br />
-        <input style="color:#FFFFFF;" id='save' value='CLEAR' type='button' onclick='clearpin()'>
+        <!--input style="color:#FFFFFF;" id='save' value='CLEAR' type='button' onclick='clearpin()'-->
     </div>
     <div id="loginn" style="display:none; margin-top: 45%;">
         <p style="color: white; font-size: 35px;">
@@ -62,7 +62,7 @@
         <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='i' onkeyup='moveOnMax(this,"j")' /> 
         <input type="number" style="-webkit-text-security:disc;color:#FFFFFF; font-size:30px;" maxlength=1 id='j' onkeyup='log()'/><br /><br /><br />
         <input id='save' value='ENTER' type='button' onclick='log()'/><br /><br />
-        <input id='save' value='CLEAR' type='button' onclick='clearpin()'/>
+        <!--input id='save' value='CLEAR' type='button' onclick='clearpin()'/-->
     </div>
         <div id="result"></div><br />
         <div id="result2"></div><br />
@@ -71,12 +71,12 @@
 </body>
 <script>
     
-setTimeout(function(){
-if(!window.location.hash) {
-       window.location = window.location + '#loaded';
-       window.location.reload();
-     }
-}, 500);
+// setTimeout(function(){
+// if(!window.location.hash) {
+//        window.location = window.location + '#loaded';
+//        window.location.reload();
+//      }
+// }, 500);
 	
 </script>
 </html>
