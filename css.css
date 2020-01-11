@@ -38,9 +38,9 @@ input{
 }
 .head_info{
     color: #FFFFFF;
-    font-size:15px;
+    font-size:21px;
     margin-left: -4px;
-    margin-top: 21px;
+    margin-top: 16px;
     -webkit-user-select:none;
             -moz-user-select:none;
             -ms-user-select:none;
@@ -80,7 +80,7 @@ input{
     border-radius: 0px;
     margin-top: 20px;
     width:100%;
-    height: 60px;
+    height: 50px;
     padding-top: 15px;
     background-color: transparent;
     color: white;
@@ -111,7 +111,7 @@ input{
 }
 #save2{
     width: 100%;
-    height: 60px;
+    height: 50px;
     color: white;
     font-size: 15px;
     margin-top: 20px;
