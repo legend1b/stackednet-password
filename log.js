@@ -153,11 +153,7 @@ function change() {
 	var named = document.getElementById('d').value= '';
 	var namee = document.getElementById('e').value= '';
 	var namef = document.getElementById('f').value= '';
-	var nameg = document.getElementById('g').value= '';
-	var name2 = document.getElementById('2').value= '';
-	var nameh = document.getElementById('h').value= '';
-	var namei = document.getElementById('i').value= '';
-	var namej = document.getElementById('j').value= '';		
+	var nameg = document.getElementById('g').value= '';		
 	$("#1").focus();	
 		}
 			
@@ -177,10 +173,6 @@ function change() {
 	var namee = document.getElementById('e').value= '';
 	var namef = document.getElementById('f').value= '';
 	var nameg = document.getElementById('g').value= '';
-	var name2 = document.getElementById('2').value= '';
-	var nameh = document.getElementById('h').value= '';
-	var namei = document.getElementById('i').value= '';
-	var namej = document.getElementById('j').value= '';	
 	$("#1").focus();		
 		}
 	});
